@@ -1,0 +1,11 @@
+.rec-img {
+    max-width: 100px;
+}
+
+.clearfix{
+    color: black;
+}
+
+.clearfix:hover{
+    background: rgb(224, 223, 223);
+}

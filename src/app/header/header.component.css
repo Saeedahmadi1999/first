@@ -1,0 +1,7 @@
+.navbar-right {
+    margin-left: auto
+}
+
+.active{
+    background-color: rgb(228, 225, 225);
+}

@@ -1,0 +1,14 @@
+<div class="row">
+  <div class="col-sm-10">
+      <app-shoping-edit></app-shoping-edit>
+      <hr>
+      <ul class="list-group">
+         <a class="list-group-item list-group-item-action pointer" 
+            *ngFor="let ing of ingridients, let i = index"
+            (click)="putIng(i)">
+            {{ing.name}} ({{ing.amunt}})
+         </a>
+      </ul>
+  </div>
+</div>
+

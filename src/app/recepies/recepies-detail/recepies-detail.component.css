@@ -1,0 +1,11 @@
+.rec-img {
+    max-width: 500px;
+}
+
+.nav-link {
+    color: rgb(129, 129, 129) !important;
+}
+
+.nav-link:hover {
+    color: rgb(85, 85, 85) !important;
+}
