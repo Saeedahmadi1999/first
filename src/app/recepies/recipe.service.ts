@@ -8,12 +8,12 @@ export class RecipeService {
   newRecipe = new Subject<Recipe[]>();
 
   private recipe:Recipe[] = [
-    new Recipe('apple', 'this is test', '../../../assets/ricardo-rocha-637025-unsplash.jpg',[
-      new ingridient('bread',1),
+    new Recipe('apple', 'this is test', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLbVRaO-ckLMP3WZ2o5zBFRCY9DGv5d2jAHk_BJJG4-4_Z3Kxl',[
+      new ingridient('test',1),
     ]),
-    new Recipe('Orange', 'testing', '../../../assets/ricardo-rocha-637025-unsplash.jpg',[
-      new ingridient('meat',2),
-      new ingridient('milk',2)
+    new Recipe('Orange', 'testing', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyw7yA4S_2LAsRwi1P23VfRKvigSl1Q1v6bUYIs5lz0_xZKC9i-w',[
+      new ingridient('test1',2),
+      new ingridient('test2',2)
     ])
   ]
 
