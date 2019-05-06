@@ -1,5 +1,9 @@
+nav {
+    direction: rtl;
+}
+
 .navbar-right {
-    margin-left: auto
+    margin-right: auto
 }
 
 .active{
