@@ -4,8 +4,9 @@
 
 .clearfix{
     color: black;
+    background-color: rgba(241, 241, 241, 0.8)
 }
 
 .clearfix:hover{
-    background: rgb(224, 223, 223);
+    background: rgba(224, 223, 223,0.9);
 }

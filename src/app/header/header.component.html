@@ -1,26 +1,26 @@
-<nav class="navbar navbar-expand-md bg-light navbar-light py-0">
+<nav class="navbar navbar-expand-md navbar-light py-0">
     <div class="container">
-        <a routerLink="/" class="navbar-brand">دسستور آشپزی</a>
+        <a routerLink="/" class="navbar-brand font-weight-bold">Recipe Book</a>
         <button class="navbar-toggler" data-toggle="collapse" data-target="#target">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse">
             <ul class="navbar-nav nav">
-                <li class="nav-item py-3" routerLinkActive="active"><a routerLink="/recipe" class="nav-link">دستور العمل</a></li>
-                <li class="nav-item py-3" routerLinkActive="active"><a routerLink="/shoping" class="nav-link">لیست خرید</a></li>
+                <li class="py-3" routerLinkActive="active"><a routerLink="/recipe" class="nav-link">Recipe</a></li>
+                <li class="py-3" routerLinkActive="active"><a routerLink="/shoping" class="nav-link">Shoping List</a></li>
             </ul>
             <ul class="navbar-nav nav navbar-right">
                 <ng-template [ngIf]="!istoken">
-                        <li class="nav-item mr-3"><a routerLink="/signup" class="nav-link">ساخت حساب</a></li>
-                        <li class="nav-item mr-3"><a routerLink="/signin" class="nav-link">ورود به حساب</a></li>
+                        <li class="mr-3 py-3" routerLinkActive="active"><a routerLink="/signup" class="nav-link">Sign Up</a></li>
+                        <li class="mr-3 py-3" routerLinkActive="active"><a routerLink="/signin" class="nav-link">Log In</a></li>
                 </ng-template>
-                <li class="mr-3" *ngIf="istoken"><a style="cursor: pointer;" class="nav-link" (click)="logout()">خارج شدن</a></li>
+                <li class="mr-3" *ngIf="istoken"><a style="cursor: pointer;" class="nav-link" (click)="logout()">Log Out</a></li>
                 <li class="dropdown" *ngIf="istoken">
-                    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" (click)="click()">منو
+                    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" (click)="click()">Menu
                     <span class="caret"></span></button>
                     <ul class="dropdown-menu" [ngClass]="{show:par}">
-                      <li><a class="nav-link" (click)="save()">ذخیره تغیرات</a></li>
-                      <li><a class="nav-link" (click)="fetch()">اضافه کردن</a></li>
+                      <li><a class="nav-link" (click)="save()">Save Changes</a></li>
+                      <li><a class="nav-link" (click)="fetch()">Fetch Data</a></li>
                     </ul>
                 </li>
             </ul>

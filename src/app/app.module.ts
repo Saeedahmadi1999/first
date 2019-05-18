@@ -1,5 +1,5 @@
 import { StoreData } from './http.service';
-import { NgModule, Component } from '@angular/core';
+import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
@@ -14,8 +14,6 @@ import { RecepiesListComponent } from './recepies/recepies-list/recepies-list.co
 import { RecepiesDetailComponent } from './recepies/recepies-detail/recepies-detail.component';
 import { RecepieItemComponent } from './recepies/recepies-list/recepie-item/recepie-item.component';
 import { ShopingEditComponent } from './shoping-list/shoping-edit/shoping-edit.component';
-import { TestComponent } from './test/test/test.component';
-import { Test2Component } from './test/test2/test2.component';
 import { Dir2Directive } from './Directive/dir2.directive';
 import { ShopService } from './shoping-list/shop.service';
 import { RecipeService } from './recepies/recipe.service';
@@ -39,8 +37,6 @@ import { guardian } from './auth/auth-guard.service';
     RecepieItemComponent,
     ShopingListComponent,
     ShopingEditComponent,
-    TestComponent,
-    Test2Component,
     DirDirective,
     Dir2Directive,
     RecipeStartComponent,
