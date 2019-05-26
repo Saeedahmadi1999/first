@@ -27,8 +27,8 @@ export class RecepiesDetailComponent implements OnInit {
     })
   }
   par = false;
-  click() {
-    this.par = !this.par
+  click(event) {
+    this.par = !this.par;
   }
 
   adding() {

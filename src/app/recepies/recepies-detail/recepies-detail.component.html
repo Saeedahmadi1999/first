@@ -1,9 +1,9 @@
-<div class="row">
+<div class="row center">
   <div class="col-xs-12">
     <h1>{{recDet.name}}</h1>
   </div>
 </div>
-<div class="row">
+<div class="row center">
   <div class="col-xs-12">
     <img [src]="recDet.imgPath" alt="#" class="rec-img">
   </div>
@@ -11,7 +11,7 @@
 <div class="row">
   <div class="col-xs-12">
     <div class="dropdown">
-        <button type="button" class="btn btn-primary dropdown-toggler" (click)="click()">Manage</button>
+        <button id="dropdown" type="button" class="btn btn-primary dropdown-toggler" (click)="click($event)">Manage</button>
         <ul class="dropdown-menu" [ngClass]="{show:par}">
           <li><a class="nav-link btn" (click)="adding()">To shoping list</a></li>
           <li><a class="nav-link btn" routerLink="Edit">Edit Recipe</a></li>
@@ -26,11 +26,11 @@
   </div>
 </div>
 <div class="row">
-    <div class="col-xs-12 w-100">
-      <ul class="list-group">
-        <li class="list-group-item" *ngFor="let ing of recDet.ingridients">
-          {{ing.name}} ({{ing.amunt}})
-        </li>
-      </ul>
-    </div>
+  <div class="col-xs-12 w-100">
+    <ul class="list-group">
+      <li class="list-group-item" *ngFor="let ing of recDet.ingridients">
+        {{ing.name}} ({{ing.amunt}})
+      </li>
+    </ul>
   </div>
+</div>

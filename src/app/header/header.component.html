@@ -1,10 +1,13 @@
 <nav class="navbar navbar-expand-md navbar-light py-0">
     <div class="container">
         <a routerLink="/" class="navbar-brand font-weight-bold">Recipe Book</a>
-        <button class="navbar-toggler" data-toggle="collapse" data-target="#target">
+        <button class="navbar-toggler"
+        data-toggle="collapse" 
+        data-target="#target"
+        (click)="dropdown()">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse">
+        <div class="collapse navbar-collapse" [ngClass]="{show:drop}">
             <ul class="navbar-nav nav">
                 <li class="py-3" routerLinkActive="active"><a routerLink="/recipe" class="nav-link">Recipe</a></li>
                 <li class="py-3" routerLinkActive="active"><a routerLink="/shoping" class="nav-link">Shoping List</a></li>

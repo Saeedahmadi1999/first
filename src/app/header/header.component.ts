@@ -12,7 +12,7 @@ import { Component, OnInit } from '@angular/core';
 export class headerCmponent implements OnInit{
     par = false;
     istoken = false;
-
+    drop = false;
     constructor(private service: StoreData, private isit:Authentication) {}
 
     ngOnInit() {
@@ -21,6 +21,9 @@ export class headerCmponent implements OnInit{
         )
     }
 
+    dropdown() {
+        this.drop = !this.drop;
+    }
     click() {
        this.par = !this.par; 
     }
