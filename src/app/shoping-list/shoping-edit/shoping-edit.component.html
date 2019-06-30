@@ -3,14 +3,15 @@
     <form (ngSubmit)="addbtn(f)" #f="ngForm">
       <div class="row">
         <div class="col-sm-5 form-group">
-          <label for="name">Name:</label>
-          <input
-           type="text"
-           class="form-control" 
-           id="name" 
-           name="name" 
-           ngModel 
-           required>
+          <label for="amount">Name:</label>
+          <input 
+            type="text" 
+            class="form-control" 
+            id="name" 
+            name="name" 
+            ngModel
+            required
+            autocomplete="off">
         </div>
         <div class="col-sm-2 form-group">
           <label for="amount">Amount:</label>

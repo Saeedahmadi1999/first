@@ -1,9 +1,10 @@
-import { FormsModule } from '@angular/forms';
+import { FormsModule }   from '@angular/forms';
 import { ShopingModule } from './shoping-list/shoping.module';
 import { StoreData } from './http.service';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
+import {BrowserAnimationsModule, NoopAnimationsModule} from '@angular/platform-browser/animations';
 
 
 import { DirDirective } from './Directive/dir.directive';
@@ -38,6 +39,8 @@ import { HomeComponent } from './home/home.component';
     BrowserModule,
     HttpClientModule,
     AppRoutingModule,
+    BrowserAnimationsModule,
+    NoopAnimationsModule
     ],
   providers: [
     ShopService,

@@ -1,3 +1,4 @@
-input.ng-invalid.ng-touched{
-    border: 1px solid red;
+.example-full-width{
+    font-size: 22px;
+    width: 100%;
 }
