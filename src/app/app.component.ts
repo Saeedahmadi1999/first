@@ -10,7 +10,7 @@ export class AppComponent implements OnInit{
   type = "recipe";
 
 
-  constructor(){}
+  constructor() {}
 
   ngOnInit() {
     firebase.initializeApp({
@@ -25,8 +25,5 @@ export class AppComponent implements OnInit{
 
   navigation(navType:string) {
     this.type = navType;
-  }
-
-
-  
+  }  
 }

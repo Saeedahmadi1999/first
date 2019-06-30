@@ -1,3 +1,4 @@
+import { Authentication } from './../../auth/auth.service';
 import { ActivatedRoute, Params, Router } from '@angular/router';
 import { Component, OnInit} from '@angular/core';
 
@@ -14,10 +15,13 @@ import { Recipe } from '../recipe.model/recipe.model';
 export class RecepiesDetailComponent implements OnInit {
   recDet:Recipe;
   id :number;
-  
+  editbtn:boolean ;
 
-  constructor(private rec:RecipeService, private route:ActivatedRoute, private Router:Router) {
-    
+  constructor(private rec:RecipeService, 
+    private route:ActivatedRoute, 
+    private Router:Router,
+    private auth:Authentication) {
+      
   }
 
   ngOnInit() {
@@ -27,7 +31,7 @@ export class RecepiesDetailComponent implements OnInit {
     })
   }
   par = false;
-  click(event) {
+  click() {
     this.par = !this.par;
   }
 

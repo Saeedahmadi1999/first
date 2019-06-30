@@ -9,6 +9,7 @@ import { Authentication } from './../Authentication';
   styleUrls: ['./signup.component.css']
 })
 export class SignupComponent implements OnInit {
+  error:string;
 
   constructor(private service: Authentication) { }
 
@@ -19,5 +20,6 @@ export class SignupComponent implements OnInit {
     const email = form.value.email;
     const pass = form.value.password;
     this.service.signup(email, pass);
+    this.error = this.service.signuperr;
   }
 }

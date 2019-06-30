@@ -15,7 +15,7 @@
             <ul class="navbar-nav nav navbar-right">
                 <ng-template [ngIf]="!istoken">
                         <li class="mr-3 py-3" routerLinkActive="active"><a routerLink="/signup" class="nav-link">Sign Up</a></li>
-                        <li class="mr-3 py-3" routerLinkActive="active"><a routerLink="/signin" class="nav-link">Log In</a></li>
+                        <li class="mr-3 py-3" routerLinkActive="active"><a routerLink="/signin" class="nav-link">Sign In</a></li>
                 </ng-template>
                 <li class="mr-3" *ngIf="istoken"><a style="cursor: pointer;" class="nav-link" (click)="logout()">Log Out</a></li>
                 <li class="dropdown" *ngIf="istoken">

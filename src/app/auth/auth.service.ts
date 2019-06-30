@@ -11,12 +11,12 @@ export class Authentication {
 
     constructor(private router: Router) {}
 
-    signup(email: string, password: string) {
-        firebase.auth().createUserWithEmailAndPassword(email, password)
-            .catch(
-                error => console.log(error)
-            );
-    }
+    // signup(email: string, password: string) {
+    //     firebase.auth().createUserWithEmailAndPassword(email, password)
+    //         .catch(
+    //             error => console.log(error)
+    //         );
+    // }
 
     signin(email: string, password: string) {
         firebase.auth().signInWithEmailAndPassword(email, password)

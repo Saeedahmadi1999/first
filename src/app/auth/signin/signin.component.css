@@ -1,0 +1,13 @@
+.alert {
+    color: rgb(241, 181, 181);
+    background-color: rgb(112, 91, 91);
+    border-radius: 10px;
+    margin: 10px 0;
+}
+
+.col-xs-12 {
+    background-color: rgba(65, 87, 75, 0.63);
+    padding: 20px ;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px rgba(65, 87, 75);
+}

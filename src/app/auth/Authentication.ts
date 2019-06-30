@@ -7,6 +7,8 @@ export class Authentication {
     token: string;
     isit = new Subject<boolean>();
     gaurd = false;
+    signuperr:string;
+
     constructor(private router: Router) { }
     signup(email: string, password: string) {
         firebase.auth().createUserWithEmailAndPassword(email, password)
@@ -15,9 +17,9 @@ export class Authentication {
                     this.token = tok;
                     this.isit.next(true);
                     this.gaurd = true;
-                    this.router.navigate(['/']);
+                    this.router.navigate(['/recipe']);
                 }))
-            .catch(error => console.log(error));
+            .catch(error => this.signuperr = error.message);
     }
     signin(email: string, password: string) {
         firebase.auth().signInWithEmailAndPassword(email, password)
@@ -26,9 +28,9 @@ export class Authentication {
                     this.token = tok;
                     this.isit.next(true);
                     this.gaurd = true;
-                    this.router.navigate(['/']);
+                    this.router.navigate(['/recipe']);
                 }))
-            .catch(error => console.log(error));
+            .catch(error => this.signuperr = error.message);
     }
     gettoken() {
         firebase.auth().currentUser.getIdToken()
@@ -39,5 +41,6 @@ export class Authentication {
         firebase.auth().signOut();
         this.isit.next(false);
         this.gaurd = false;
+        this.router.navigate(['/']);
     }
 }

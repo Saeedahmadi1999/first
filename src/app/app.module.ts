@@ -4,6 +4,11 @@ import { StoreData } from './http.service';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
+import {MatInputModule} from '@angular/material/input';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {NoopAnimationsModule} from '@angular/platform-browser/animations';
+
+
 
 import { DirDirective } from './Directive/dir.directive';
 import { AppRoutingModule } from './app-routing.module';
@@ -16,7 +21,6 @@ import { SignupComponent } from './auth/signup/signup.component';
 import { SigninComponent } from './auth/signin/signin.component';
 import { Authentication } from "./auth/Authentication";
 import { guardian } from './auth/auth-guard.service';
-import { RecipeModule } from './recepies/recipe.module';
 import { HomeComponent } from './home/home.component';
 
 
@@ -30,7 +34,7 @@ import { HomeComponent } from './home/home.component';
     Dir2Directive,
     SignupComponent,
     SigninComponent,
-    HomeComponent
+    HomeComponent,
   ],
   imports: [
     ShopingModule,
@@ -38,6 +42,9 @@ import { HomeComponent } from './home/home.component';
     BrowserModule,
     HttpClientModule,
     AppRoutingModule,
+    MatInputModule,
+    BrowserAnimationsModule,
+    NoopAnimationsModule
   ],
   providers: [
     ShopService,
