@@ -4,10 +4,6 @@ import { StoreData } from './http.service';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
-import {MatInputModule} from '@angular/material/input';
-import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import {NoopAnimationsModule} from '@angular/platform-browser/animations';
-
 
 
 import { DirDirective } from './Directive/dir.directive';
@@ -42,10 +38,7 @@ import { HomeComponent } from './home/home.component';
     BrowserModule,
     HttpClientModule,
     AppRoutingModule,
-    MatInputModule,
-    BrowserAnimationsModule,
-    NoopAnimationsModule
-  ],
+    ],
   providers: [
     ShopService,
     RecipeService,
